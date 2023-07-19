@@ -1,0 +1,63 @@
+#signupinfo label {
+	display: block;
+	position: relative;
+	margin: 80px 0px 80px;
+	font-size: 40px;
+}
+
+#signupinfo legend {
+	font-size: 40px;
+	color: black;
+	margin-left: 40px;
+}
+
+body {
+	background-color: lightblue;
+}
+
+#SubmitButton {
+	height: 80px;
+	width: 125px;
+	margin-left: 180px;
+}
+
+#ExitButton {
+	height: 80px;
+	width: 125px;
+	margin-right: 180px;
+}
+
+#signupinfo input {
+	position: absolute;
+	left: 250px;
+	padding: 20px 0px 20px;
+}
+
+#signupinfo {
+	background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  margin: auto;
+  position: relative;
+  width: 750px;
+  height: 700px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #09C;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+#FNameinput , #LNameinput , #Emailinput , #Passwordinput , #UserNameInput {
+	width: 30em;
+	
+}

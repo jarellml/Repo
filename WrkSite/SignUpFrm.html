@@ -1,0 +1,87 @@
+<link rel="stylesheet" type="text/css" href="frmSignUp.css">
+<?php
+// connection string
+db = mysqli_connect('localhost','username','password','database_name') or 
+die('Error connecting to database')
+?>
+
+<?php
+// storing input data and error checking
+$FNameError = $LnameError = $EmailError = $PWordError = UserNError = "";
+$FirstName = $LastName = $Email = $Password = $UserName = "";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["FirstName"])) {
+        $FNameError = "Missing";
+    }
+    else {
+        $FirstName = $_POST["FirstName"]
+    }
+	}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	if (empty($_POST["LastName"])) {
+		$LnameError = "Missing";
+	}
+	else {
+		$LastName = $_POST["LastName"]
+	}
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["Email"])) {
+        $EmailError = "Missing";
+    }
+    else {
+        $Email = $_POST["Email"];
+    }
+	}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["UserName"])) {
+        $UserNError = "Missing";
+    }
+    else {
+        $UserName = $_POST["UserName"];
+    }
+	}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["Password"])) {
+        $PWordError = "Missing";
+    }
+    else {
+        $Password = $_POST["Password"];
+    }
+}
+
+
+?>
+
+<form>
+<fieldset id= "signupinfo">
+<legend><span>Sign Up Information</span></legend>
+<label>
+FirstName
+<input type="text" name= "FirstName" id= "FNameInput">
+</label>
+<label>
+LastName
+<input type="text" name= "LastName" id= "LNameInput">
+</label>
+<label>
+Email
+<input type="text" name= "Email" id= "EmailInput">
+</label>
+<label>
+Password
+<input type="text" name= "Password" id= "PasswordInput">
+</label>
+<label>
+UserName
+<input type="text" name= "UserName" id= "UserNameInput">
+</label>
+<input type="submit" value="Submit" id= "SubmitButton">
+<input type="submit" value="Submit" id= "ExitButton">
+</fieldset>
+</form>
+
+<body> 
+
+</body>
