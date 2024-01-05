@@ -53,10 +53,8 @@ li a:hover {
 
 .topNav {
 	
-	text-align: center;
+	text-align: left;
 	font-size: 60px;
-	display: inline-block;
-	
 }
 
 a:active {
